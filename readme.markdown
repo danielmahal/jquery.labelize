@@ -10,5 +10,4 @@ jQuery plugin for making overlaying labels for input fields
     <input id="input" type="text" />
 
 ### Javascript
-----------
     $('#input').labelize();
