@@ -25,6 +25,8 @@
             var label = $('label[for=' + input.attr('id') + ']');
 
             var check = function(e, animate) {
+                animate = animate === false ? false : true;
+
                 var hasValue = input.val().length > 0;
                 var hasFocus = (e && e.type === 'focus') || input.is(':focus');
 
