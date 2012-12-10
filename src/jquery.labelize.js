@@ -18,8 +18,12 @@
                 $elements.toggleClass(settings.valueClass, !!$input.val().length)
             });
 
-            $input.on('focus blur', function() {
-                $elements.toggleClass(settings.focusClass, !!$input.is(':focus'));
+            $input.on('focus', function() {
+                $elements.addClass(settings.focusClass);
+            });
+
+            $input.on('blur', function() {
+                $elements.removeClass(settings.focusClass);
             });
         });
     }
